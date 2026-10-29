@@ -1,0 +1,115 @@
+/* assets/css/cetak-rapor.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rapor-page {
+  padding: 2cm;
+  page-break-after: always;
+}
+
+.rapor-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rapor-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h2 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.header-text h3 {
+  font-size: 12pt;
+}
+
+.header-text p {
+  font-size: 10pt;
+}
+
+.line-double {
+  border: 0;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  height: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.identity-table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-size: 11pt;
+}
+
+.identity-table td {
+  padding: 0.25rem 0.5rem;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 11pt;
+}
+
+.score-table th,
+.score-table td {
+  border: 1px solid #000000;
+  padding: 0.5rem;
+}
+
+.score-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 11pt;
+}
+
+.sig-box {
+  width: 40%;
+  text-align: center;
+}
+
+.sig-center {
+  text-align: center;
+  font-size: 11pt;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  .rapor-page {
+    padding: 2cm;
+  }
+}
